@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+	
+<body>
+	
+<div id="container1" >
+
+<div id="header" style="background-image:url(images/2.jpg);clear:both;align:center;">
+<h1 style="margin-bottom:0;font-family:'abril-fatface';color:#161313;font-size:80px;clear: both;text-align: center " >学 习 录 播 器</h1></div>
+<!--
+	<div id="container2">
+	<div id="topmenu">
+-->
+<!--
+       <form action="LoginServlet" method="post" name="login">
+		   <p>用户名<input type = "text" name="username" size="13"/></p>
+			密码<input type = "password" name="password" size="13"/>
+			<input type = "submit" name="Submit" value="登 录">
+			<input type = "bottom" name="register" value="注 册" onClick="check();">
+	   </form>
+-->
+<div id="menu" style="background-image: url(images/2.jpg);height:500px;width:100px;float:left;"><br /><br /><br /><br />
+<!--<button type="button">播放/暂停</button><br>-->
+<a href="/example/html/lastpage.html" style="font-size:20px;color:#161313">播放/暂停</a><br /><br />
+<a href="/example/html/lastpage.html" style="font-size:20px;color:#161313">录音问答</a><br /><br />
+<a href="/example/html/lastpage.html" style="font-size:20px;color:#161313">文本问答</a><br /><br />
+<a href="/example/html/lastpage.html" style="font-size:20px;color:#161313">视频问答</a><br /><br />
+</div>
+	
+<div id="bian" style="background-image: url(images/2.jpg);height:500px;width:100px;float:right;"></div>
+	
+<div id="content" style="background-color:#EEEEEE;height:500px;width:800px;float:left;align:center;">
+<video width="600" height="400" controls="controls" align="center" >
+  <source src="shipin/movie.ogg" type="video/ogg" />
+<!--	src=链接之类的-->
+  <track src="demo_sub.vtt">；
+</video>
+<br /><br />
+<button onclick="getTextTrack()" type="button">获得可用文本轨道的数量</button>
+<br />
+<script>
+myVid=document.getElementById("video");
+function getTextTracks()
+  { 
+  alert(myVid.textTracks.length);
+  } 
+</script>	
+</div>
+
+<div id="footer" style="background-image: url(images/2.jpg);height:40px;font-size:30px;clear:both;text-align:center;">
+物联网17班 陈春芳</div>
+
+</div>
+ 
+</body>
+</html>
